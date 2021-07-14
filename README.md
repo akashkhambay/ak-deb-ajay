@@ -11,9 +11,9 @@
 | Javascript Ave |     2     |    Steve    |
 | zebra stripes  |     3     |     Dan     |
 
-    - As you can above the table has 3 columns with the middle column referring to the the unique id provided to the house owner on a particlar street in the neighbourhood.
-    - This Unique Id could be used in another table to be linked to the postcode of the house, number of people in household etc...
-    - Hence we feel it would be appropriate to make use of an SQL database, as the data is related in someway.
+   - As you can above the table has 3 columns with the middle column referring to the the unique id provided to the house owner on a particlar street in the neighbourhood.
+   - This Unique Id could be used in another table to be linked to the postcode of the house, number of people in household etc...
+   - Hence we feel it would be appropriate to make use of an SQL database, as the data is related in someway.
 
 ### Very basic Schema example of the SQL data and how it links
 
@@ -29,9 +29,11 @@
 ## Table of HTTP Verbs, Path and Action:
 | HTTP verb     | Path                      | Action   |
 | ------------- |:---------------------------:| ---------:|
-| GET          | /neighborhood              | index    |
-| GET          | /neighborhood/house        |  house  |
-| GET          | /neighbourhood/residents   | residents |
+| GET   | /neighborhood          | index    |
+| GET   | /neighborhood/house        |  house  |
+| GET   | /neighborhood/house:{householdsizeid}   |  house  |
+| GET     | /neighbourhood/residents  | residents |
+| GET     | /neighborhood/resident:{ageid}     | resident age |
 | DELETE       | /neighbourhood/residents:id   |  destroy |
 | DELETE       | /neighbourhood/house:id       |  destroy |
 | PUT         | /neighbourhood/house:id    | create   |
