@@ -24,7 +24,7 @@
 - Every request to the neighbourhood API should be a GET request as the system is to only track people, houses and addresses in the neighbourhood.
 - GET people living in the area and their information regarding age and name, the houses and addresses including post code, number of occupants in a house and owner of each house.
 - There weren't be any changes that are made unless a resident moves out of the house, in which case we will use UPDATE and DELETE in order to update the records.
-- POST request will send new data to the API to update the residential data whilst the DELETE request will remove data through the API.
+- PUT request will send new data to the API to update the residential data whilst the DELETE request will remove data through the API.
 
 ## Table of HTTP Verbs, Path and Action:
 | HTTP verb     | Path                      | Action   |
