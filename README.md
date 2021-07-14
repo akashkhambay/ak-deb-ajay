@@ -27,12 +27,12 @@
 - POST request will send new data to the API to update the residential data whilst the DELETE request will remove data through the API.
 
 ## Table of HTTP Verbs, Path and Action:
-| HTTP verb      | Path                    | Action    |
-| ------------- |:------------------------:| ---------:|
-| GET           | /neighborhood            | index     |
-| GET           | /neighborhood/house      |   house   |
-| GET           | /neighbourhood/residents | residents |
-| DELETE        | /neighbourhood/residents |   destroy |
-| DELETE        | /neighbourhood/house     |   destroy |
-| POST          | /neighbourhood/house     | create    |
-| POST          | /neighbourhood/residents | create    |
+| HTTP verb     | Path                      | Action   |
+| ------------- |:---------------------------:| ---------:|
+| GET          | /neighborhood              | index    |
+| GET          | /neighborhood/house        |  house  |
+| GET          | /neighbourhood/residents   | residents |
+| DELETE       | /neighbourhood/residents:id   |  destroy |
+| DELETE       | /neighbourhood/house:id       |  destroy |
+| PUT         | /neighbourhood/house:id    | create   |
+| PUT         | /neighbourhood/residents:id | create   |
